@@ -4,7 +4,7 @@
 
 Those pages by Guillaume Bordier tries to collect different technical assets and explanation, usually supported by scripts or home-made tools.
 
-# Command Line  [Tools](./tools/)
+# Command Line  [Tools](https://github.com/gbordier/tools)
 Old command line tools pre-dating powershell and originally built for very old version of Windows, most of those still work and several have been updated along the years
 
 

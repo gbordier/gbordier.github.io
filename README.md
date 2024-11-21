@@ -14,11 +14,10 @@ Old command line tools pre-dating powershell and originally built for very old v
 - transform blob storage disks to Managed disks
 - update dns info
 - create underlying vnets and subnets
-
+## Entra ID Authentication 
+### [Machine 2 Machine Authentication ](https://github.com/gbordier/AADM2MAuth/blob/main/M2MAUTH.md) is a documentation that explain the details of intra or cross-tenant Machine 2 Machine Authentication with Entra ID.
+### [AADM2MAuth Demo](https://github.com/gbordier/AADM2MAuth/blob/main/README.md) has the code to repro a demo of cross tenant M2M authentication
   
 ## Infras As Code (Bicep)
 ### DevBox Templates Bicep creation  [DevBox-Demo](https://github.com/gbordier/devbox-demo)
-
-# articles and explanations [Docs](https://github.com/gbordier/docs)
-Attempt at clarifing some key concepts for modern cloud architecture such as Azure Active Directory and Oauth authentication with supporting scripts.
 

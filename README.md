@@ -20,7 +20,7 @@ Microsoft documents this [here](https://learn.microsoft.com/en-us/dotnet/core/in
 
 On ARM machine such as Rasberry PI it can be a bit more tricky and you may need to rebuild it from scratch, but it works well after that.
 
-the easiest way I found is to actually run it inside docker, the microsoft [repository](https://mcr.microsoft.com/powershell) However for distributions such as debian on ARM (raspbian) those distribution do not work, but we can use the SDKs images instead such as.
+the easiest way I found is to actually run it inside docker, the microsoft [repository]([https://mcr.microsoft.com/powershell](https://mcr.microsoft.com/en-us/artifact/mar/powershell) However for distributions such as debian on ARM (raspbian) those distribution do not work, but we can use the SDKs images instead such as.
 ```
 docker run -it mcr.microsoft.com/dotnet/sdk:9.0 pwsh
 ```

@@ -14,6 +14,17 @@ Old command line tools pre-dating powershell and originally built for very old v
 - transform blob storage disks to Managed disks
 - update dns info
 - create underlying vnets and subnets
+### Running Powershell on Linux
+These days, running pwsh on Linux has never been so easy, there are still several ways of doing this.
+Microsoft documents this [here](https://learn.microsoft.com/en-us/dotnet/core/install/linux) 
+
+On ARM machine such as Rasberry PI it can be a bit more tricky and you may need to rebuild it from scratch, but it works well after that.
+
+the easiest way I found is to actually run it inside docker, the microsoft [repository](https://mcr.microsoft.com/powershell) However for distributions such as debian on ARM (raspbian) those distribution do not work, but we can use the SDKs images instead such as.
+```
+docker run -it mcr.microsoft.com/dotnet/sdk:9.0 pwsh
+```
+which will run pwsh nicely.
 
 ## Entra ID Authentication 
 Entra ID (formerly known as Azure Active Directory) is the Identity provider for all Microsoft Cloud workloads.

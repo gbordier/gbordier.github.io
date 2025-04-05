@@ -13,6 +13,14 @@ jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    needs: jekyll-build
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
@@ -22,6 +30,10 @@ jobs:
       
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+          deploy:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

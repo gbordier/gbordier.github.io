@@ -20,7 +20,6 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    needs: jekyll-build
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3

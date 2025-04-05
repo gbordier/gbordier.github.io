@@ -9,11 +9,19 @@ Old command line tools pre-dating powershell and originally built for very old v
 
 
 # Azure related assets
-## Powershell 
-### [CopyVMCrossTenant](https://github.com/gbordier/CopyVMCrossTenant) is a tool to copy Azure Virtual Machines from One Tenant to the Other while doing some modifications 
+## Networking
+While I am a huge adept of my collegue [CloudTrooper](https://blog.cloudtrooper.net/) and his extensive blog about Azure networking, I sometile need to dig myself into things to make sure I understood them well. I recently had to go to a project where private networking was a new requirements and it was not clear for everyone what it meant. Check out this article about  [Private Endpoint / Service Endpoint / Azure Network Perimeters](./PRIVATE_SERVICE_ENDPOINT.md)
+
+## IAAS
+### Copy your VMs 
+In my job, we are often asked to swtich azure subscriptions, I carry a bulk of old VMs for advanced testing purposes or repro of customer situations, so I finally came up with a good script to Copy my vm from one place to another.
+
+
+ [CopyVMCrossTenant](https://github.com/gbordier/CopyVMCrossTenant) is a tool to copy Azure Virtual Machines from One Tenant to the Other while doing some modifications 
 - transform blob storage disks to Managed disks
 - update dns info
 - create underlying vnets and subnets
+## Powershell
 ### Running Powershell on Linux
 These days, running pwsh on Linux has never been so easy, there are still several ways of doing this.
 Microsoft documents this [here](https://learn.microsoft.com/en-us/dotnet/core/install/linux) 

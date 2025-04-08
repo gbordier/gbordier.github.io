@@ -118,3 +118,7 @@ Them they are really great but apply only to: https://learn.microsoft.com/en-us/
 | [Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security#network-secuirty-perimeter-preview) | Microsoft.Storage/storageAccounts                            | -                                                            |
 
 As always this short summary does not compare to Cloudtrooper's [[privatelinkrealitybites – Cloudtrooper](https://blog.cloudtrooper.net/category/privatelink/privatelinkrealitybites/)](https://blog.cloudtrooper.net/category/privatelink/privatelinkrealitybites/) on this but hopefully was faster to read. 
+
+Guillaume
+
+more notes from my small Azure info page [here](https://github.com/gbordier/gbordier.github.io#azure-related-assets)
